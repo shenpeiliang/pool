@@ -27,7 +27,9 @@ docker环境（php+mysql+redis），其中php需要安装swoole扩展
 
 进入php容器：
 
-```docker-compose exec php7.3 bash```
+```
+docker-compose exec php7.3 bash
+```
 
 进入代码目录开启服务：
 
@@ -39,15 +41,21 @@ php ./server.php
 
 进入mysql容器：
 
-```docker-compose exec mysql-master bash```
+```
+docker-compose exec mysql-master bash
+```
 
 mysql命令行：
 
-```mysql -h127.0.0.1 -uroot -p -Ddocker```
+```
+mysql -h127.0.0.1 -uroot -p -Ddocker
+```
 
 #查看连接
 
-```show full processlist;```
+```
+show full processlist;
+```
 
 未开启服务前，如图：
 
@@ -63,7 +71,9 @@ mysql命令行：
 
 并发测试：
 
-```ab -c 80 -n 2000 http://192.168.137.129/swoole/client.php```
+```
+ab -c 80 -n 2000 http://192.168.137.129/swoole/client.php
+```
 
 结果：
 
