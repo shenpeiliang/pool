@@ -61,7 +61,7 @@ show full processlist;
 
 ![image](https://github.com/shenpeiliang/pool/blob/master/images/img_3.png)
 
-未开启服务后，如图：
+开启服务后，如图：
 
 ![image](https://github.com/shenpeiliang/pool/blob/master/images/img_4.png)
 
