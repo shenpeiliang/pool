@@ -15,13 +15,13 @@ php很少有说到数据库连接池的概念，这里使用swoole做简单的�
 
 图解：
 
-![image](https://github.com/shenpeiliang/pool/blob/master/images/img_1.jpg)
+![image](images/img_1.jpg)
 
 ### 运行环境：
 
 docker环境（php+mysql+redis），其中php需要安装swoole扩展
 
-![image](https://github.com/shenpeiliang/pool/blob/master/images/img_2.png)
+![image](images/img_2.png)
 
 ### 测试步骤：
 
@@ -59,11 +59,11 @@ show full processlist;
 
 未开启服务前，如图：
 
-![image](https://github.com/shenpeiliang/pool/blob/master/images/img_3.png)
+![image](images/img_3.png)
 
 开启服务后，如图：
 
-![image](https://github.com/shenpeiliang/pool/blob/master/images/img_4.png)
+![image](images/img_4.png)
 
 
 连接池配置了最小连接为10，最大连接数为20，连接空闲时间为10s（空闲回收判断，应小于mysql会话超时时间）,最大连接洪峰预警数位16（超过这个值的时候就进行回收处理）
@@ -77,7 +77,7 @@ ab -c 80 -n 2000 http://192.168.137.129/swoole/client.php
 
 结果：
 
-![image](https://github.com/shenpeiliang/pool/blob/master/images/img_5.png)
+![image](images/img_5.png)
 
 ### 注意
 
